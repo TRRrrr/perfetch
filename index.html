@@ -12,6 +12,7 @@
 <link type="text/css" href="css/css3.css" rel="stylesheet" />
 <script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.pikachoose.js"></script>
+<script type="text/javascript" src="js/myJS.js"></script>
 <script language="javascript">
 			$(document).ready(
 				function (){
@@ -40,14 +41,14 @@
 
 	<nav>
     <ul>
-    <li><a href="#" class="current">Home</a>
+    <li><a href="#" name="nav" class="current" value="homepage">Home</a>
 
 	</li>
-    <li><a href="#">About us</a></li>
-	<li><a href="#">Services</a></li>
-	<li><a href="#">Portfolio</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#" name="nav"  value="about-us" result="intro" onclick="navSelector(this)">About us</a></li>
+	<li><a href="#" name="nav" value="services" >Services</a></li>
+	<li><a href="#" name="nav" value="portfolio" >Portfolio</a></li>
+    <li><a href="#" name="nav" value="news" >News</a></li>
+    <li><a href="#" name="nav" value="contact">Contact</a></li>
 
     </ul>
     </nav>
