@@ -274,10 +274,9 @@ h4 span{
 .group_bannner_right{
 	width: 380px;
 	position: absolute;
-	top:-37px;
 	right:170px;
 	background:transparent;
-	margin-top:50px;
+	margin-top:17px;
 	
 	
 	}
@@ -343,6 +342,47 @@ header{
 .holder_content_separator{
 	margin-bottom:20px;
 	}
+/***************************************************
+				   About Us
+***************************************************/
+.about_us_container1{
+	width: 960px;
+	position: relative;
+	float: left;
+	padding:10px;
+	margin-top:17px;
+	background:transparent;
+}
+
+.about_us_container{
+	width: 960px;
+	position: relative;
+	float: left;
+	padding:10px;
+	margin-top:17px;
+	background:transparent;
+	background: url(../images/line.png) 0 -18px no-repeat;	
+}
+
+.about_us_photo_container{
+	width: 380px;
+	position: relative;
+	float: left;
+	background:transparent;
+}
+
+.about_us_intro_container{
+	width: 500px;
+	position: relative;
+	float: right;
+	right: 50px;
+	background:transparent;
+
+}
+
+
+
+
 
 	
 /***************************************************
