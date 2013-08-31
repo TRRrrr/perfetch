@@ -28,6 +28,7 @@ function navIni(){
 		}
 	}
 }
+<<<<<<< HEAD
 /////////////////////
 /*
 function readMoreIni(){
@@ -43,6 +44,8 @@ function readMoreSelector(a){alert(a.getAttribute('value'));
 	var link = document.getElementById(a.getAttribute('value'));
 	navSelector(link);
 }
+=======
+>>>>>>> 8a2e6690314b25a3887dbf452d5986ab264a122c
 
 function homepage(){
 	$("#content").load("ajax/home.html");
