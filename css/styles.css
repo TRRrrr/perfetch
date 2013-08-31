@@ -7,7 +7,7 @@
 			      Reset
 ***************************************************/
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, form, label, legend, caption, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section, summary {
+html, body, iframe, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, form, label, legend, caption, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section, summary {
     margin: 0;
 	padding: 0;
 	border: 0;
@@ -55,7 +55,11 @@ html, body{
 
 }
 
-
+html, iframe{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
 
 p {
 	margin-bottom:7px;
@@ -170,6 +174,7 @@ h4 span{
 
 }
 
+
 	
 
 /***************************************************
@@ -257,7 +262,7 @@ h4 span{
 	
 	
 .group_bannner_left {
-	width: 420px;
+	width: 430px;
 	position: absolute;
 	top:60px;
 	background:transparent;
@@ -270,10 +275,9 @@ h4 span{
 .group_bannner_right{
 	width: 380px;
 	position: absolute;
-	top:-37px;
 	right:170px;
 	background:transparent;
-	margin-top:50px;
+	margin-top:17px;
 	
 	
 	}
@@ -339,6 +343,47 @@ header{
 .holder_content_separator{
 	margin-bottom:20px;
 	}
+/***************************************************
+				   About Us
+***************************************************/
+.about_us_container1{
+	width: 960px;
+	position: relative;
+	float: left;
+	padding:10px;
+	margin-top:17px;
+	background:transparent;
+}
+
+.about_us_container{
+	width: 960px;
+	position: relative;
+	float: left;
+	padding:10px;
+	margin-top:17px;
+	background:transparent;
+	background: url(../images/line.png) 0 -18px no-repeat;	
+}
+
+.about_us_photo_container{
+	width: 380px;
+	position: relative;
+	float: left;
+	background:transparent;
+}
+
+.about_us_intro_container{
+	width: 500px;
+	position: relative;
+	float: right;
+	right: 50px;
+	background:transparent;
+
+}
+
+
+
+
 
 	
 /***************************************************
@@ -433,7 +478,49 @@ header{
 
 }
 
+/***************************************************
+			        SERVICES
+***************************************************/
+.services_container{
+	width: 960px;
+	position: relative;
+	float: left;
+	padding:10px;
+	margin-top:17px;
+	background:transparent;
+	}
+
+	.services_container h1{
+		font-size: 30px;
+		line-height:1.6;
+		color:#00CCFF;
+		text-align:left;
+		margin-left:10px;
+		text-transform:none;	
+	}
+
+	.services_container h2{
+
+		font-size: 28px;
+		line-height:1.6;
+		color:#663366;
+		text-align:left;
+		background-color:transparent;
+		padding-top:12px;
+		margin-bottom:9px;
+		width:820px;
+	}
 	
+	.services_container h3{
+		font-size: 18px;
+		line-height:1.7;
+		color:black;
+		text-align:left;
+		padding-top:8px;
+		margin-bottom:12px;
+		margin-left:60px;
+
+}
 	
 /***************************************************
 			        FOOTER
