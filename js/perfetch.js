@@ -1,21 +1,30 @@
 //an archor loads a page to the result area.
+function pageIni(){
+	window.onload = function(){
+		navIni();
+		homepage();
+	}
 
-function loadPage(a){
-    var archor = a;
-    var page = archor.getAttribute('value')+".html";
-	var result = '#'+archor.getAttribute('result');
+}
+
+
+function loadPage(page_value, resultTag){
+    var page = page_value + ".html";
+	var result = '#' + resultTag;
     $(result).load('ajax/'+page);
 }
 
-function navSelector(a){
-    var archor = a;
-	loadPage(archor);
+function navSelector(page_value,resultTag){
+	loadPage(page_value,resultTag);
 	var nav = document.getElementsByTagName("nav");
 	var navs = nav[0].getElementsByTagName("a");
 	for(var i=0; i<navs.length;i++){
-		navs[i].className='';
+		if(navs[i].getAttribute('value') !== page_value){
+			navs[i].className='';
+		}else{
+			navs[i].className='current';
+		}
 	}
-	archor.className='current';	
 }
 
 function navIni(){
@@ -23,26 +32,23 @@ function navIni(){
 	for(var i=0; i < nav.length; i++){
 		var navs = nav[i].getElementsByTagName("a");
 		for(var j=0;j < navs.length; j++){
-			navs[j].onclick = function() {navSelector(this);};
-			navs[j].setAttribute("result","content");
+			navs[j].onclick = function() {navSelector(this.getAttribute('value'),this.getAttribute('resultTag'));};
+			navs[j].setAttribute("resultTag","content");
 		}
 	}
 }
 /////////////////////
-/*
+
 function readMoreIni(){
 	var readMore = document.getElementsByClassName("read_more");
 	for(var i=0; i < readMore.length; i++){
-		var page = readMore[i].getAttribute('value');
-		readMore[i].parentNode.onclick = function(){readMoreSelector(page);};
-		readMore[i].setAttribute("result","content");
+		//var page = readMore[i].getAttribute('value');
+		readMore[i].onclick = function(){navSelector(this.getAttribute('value'),this.getAttribute('resultTag'));};
+		readMore[i].setAttribute("resultTag","content");
+		//readMore[i].setAttribute("value",readMore[i].getAttribute("value"));
 	}
-}*/
-///////////////////////
-function readMoreSelector(a){alert(a.getAttribute('value'));
-	var link = document.getElementById(a.getAttribute('value'));
-	navSelector(link);
 }
+///////////////////////
 
 function homepage(){
 	$("#content").load("ajax/home.html");
