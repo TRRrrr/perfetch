@@ -87,7 +87,6 @@ h1{
 	font-size: 60px;
 	line-height:1.6;
 	color:#663366;
-	text-transform:capitalize;
 	text-align:left;
 	margin-left:40px;
 
@@ -122,7 +121,6 @@ h3{
 	font-size: 28px;
 	line-height:1.6;
 	color:#0080FF;
-	text-transform:capitalize;
 	text-align:left;
 	background-color:transparent;
 	padding-top:12px;
@@ -498,7 +496,6 @@ header{
 		color:#0080FF;
 		text-align:left;
 		margin-left:10px;
-		text-transform:none;	
 	}
 
 	.services_container h2{
@@ -521,7 +518,6 @@ header{
 		padding-top:8px;
 		margin-bottom:12px;
 		margin-left:60px;
-
 }
 
 /***************************************************
