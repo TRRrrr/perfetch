@@ -121,7 +121,7 @@ h3{
 
 	font-size: 28px;
 	line-height:1.6;
-	color:#00CCFF;
+	color:#0080FF;
 	text-transform:capitalize;
 	text-align:left;
 	background-color:transparent;
@@ -495,7 +495,7 @@ header{
 	.services_container h1{
 		font-size: 25px;
 		line-height:1.6;
-		color:#00CCFF;
+		color:#0080FF;
 		text-align:left;
 		margin-left:10px;
 		text-transform:none;	
@@ -540,7 +540,7 @@ header{
 .newsContainer h1{
 	font-size: 20px;
 	line-height:1.6;
-	color:#00CCFF;
+	color:#0080FF;
 	text-align:left;
 	background-color:transparent;
 	padding-top:12px;
@@ -683,7 +683,7 @@ nav ul li a:hover{
 
 }
 nav ul li a.current{
-	background-color:#00CCFF;
+	background-color:#0080FF;
 	padding:15px;
 	color:white;
 	-moz-border-radius: 8px;
